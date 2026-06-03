@@ -26,6 +26,13 @@ body {
     backdrop-filter: blur(20px);
     color:aliceblue;
 }
+.xpress {
+    border-radius: 140px;
+}
+.first-logo {
+    border-radius: 100px;
+    align-items: left;
+}
 main {
     padding-top: 70px;
 }
