@@ -11,7 +11,7 @@ body {
 }
 #navbar {
     background-color: grey;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -27,8 +27,13 @@ body {
     color:aliceblue;
 }
 .xpress {
-    border-radius: 140px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
 }
+
+
+
 .first-logo {
     border-radius: 100px;
     align-items: left;
@@ -45,14 +50,23 @@ main {
 }
 .ofertas a {
     text-decoration: none;
-    color: black;
     font-weight: bold;
-    color:aliceblue;
+    color: aliceblue;
+    position: relative;
+}
+.ofertas a:hover {
+    color:goldenrod;
+    text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
+    transform: translateY(-2px);
+    /* o con box-shadow si usas padding/border */
 }
 .welcome {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+h1 {
+    margin-left: 35px;
 }
 h2, h4 {
     padding-bottom: 30px;
@@ -78,7 +92,7 @@ h2, h4 {
 }
 .img img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: contain;
 }
 figcaption {
@@ -99,11 +113,13 @@ ul {
     text-decoration: none;
     gap: 20px;
     font-weight: bold;
+    font-size: 20px;
 }
 .pasajes {
     display: flex;
     justify-content: center;
 }
+
 footer {
     text-align: center;
     background-color: auto;
@@ -113,6 +129,13 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+.whats a {
+    text-decoration: none;
+}
+.whats a:hover {
+    transform: translateY(2px);
+    color: green;
 }
 .gracias {
     padding-bottom: 20px;
