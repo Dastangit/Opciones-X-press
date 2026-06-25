@@ -9,12 +9,15 @@
 <body>
     <nav id="navbar">
         <logo class="logo">Opciones X-press</logo>
-        <div class="ofertas"> 
-            <a href="#remesas">Remesas</a>
-            <a href="#products">Productos</a>
-            <a href="https://whatsapp.com/channel/0029Vb79kz4I7Be6PnQ0T93o">Pasajes</a>
-            <a href="#contact">Contactar</a>
-        </div>
+            <button class="dropbtn">Ofertas <img src="Icons/gridicons--dropdown.svg" alt="WhatsApp" width="30" height="30"></button> 
+        <div class="dropdown-content hidden">   
+            <div class="menu">
+                <a href="#remesas">Remesas</a>
+                <a href="#products">Productos</a>
+                <!-- <a href="https://whatsapp.com/channel/0029Vb79kz4I7Be6PnQ0T93o">Pasajes</a> -->
+                <a href="#contact">Contactar</a>
+            </div>
+        </div>     
     </nav>
     <main>
         <section>
@@ -234,13 +237,22 @@
         <section  class="pasajes">
             <div id="remesas">
                 <h1>Remesas a Cuba</h1>
-                <h3 class="pagos">Pagos en efectivo</h3>
+                <img src="/Icons/logos--paypal.svg" width="25">
+                <img src="/Icons/twemoji--flag-united-states.svg" width="30">
+                <img src="/Icons/twemoji--flag-peru.svg" width="30">
+                <img src="/Icons/twemoji--flag-brazil.svg" width="30">
+                <img src="/Icons/twemoji--flag-spain.svg" width="30">
+                <img src="/Icons/twemoji--flag-mexico.svg" width="30">
+                <img src="/Icons/cib--cashapp.svg" width="28">
+                <img src="/Icons/subway--world.svg" width="30">
                 <ul>
-                    <li>Zelle - 500 cup ------- Cash app - 450 cup</li>
-                    <li>IBAN - 370 cup ------- Bizum - 370 cup</li>
-                    <li>Paypal - 350 cup ------- Western - 350 cup</li>
-                    <li>Postepay - 350 cup ------- México - 22 cup</li>
-                    <li>Perú - 85 cup  -------- Brazil - 70 cup</li>
+                    <li>Zelle - - - - - - - - - - - 600 cup</li>
+                    <li>Cash app - - - - - - - - 520 cup</li>
+                    <li>IBAN / Bizum - - - - - 400 cup</li>
+                    <li>Paypal / Western - - - 380 cup</li>
+                    <li>México - - - - - - - -  - - 30 cup</li>
+                    <li>Perú - - - - - - - - - - - - 85 cup</li>
+                    <li>Brazil - - - - - - - - - - -  70 cup</li>
                 </ul>
             </div>
         </section>
@@ -248,11 +260,14 @@
     </main>
     <footer>
         <h2 id="contact">Contactos</h2>
-        <h3 class="whats">Whatsapp <a href="https://wa.me/5358648303?text=Hola%20Dastan" target="blank">58648303</a> // <a href="https://wa.me/5363647703?text=Hola%20Gertrudis" target="_blank">63647703</a></h3>
+        <h3 class="whats">Whatsapp <a href="https://wa.me/5358648303?text=Hola%20Dastan" target="blank">58648303</a>
+            <img src="Icons/logos--whatsapp-monochrome-icon.svg" alt="WhatsApp" width="24" height="24">
+            <a href="https://wa.me/5363647703?text=Hola%20Gertrudis" target="_blank">63647703</a></h3>
         <br>
         <div class="gracias">
             <p>Gracias por elegirnos</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

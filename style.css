@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
 }
 #navbar {
-    background-color: grey;
     padding: 25px;
     display: flex;
     justify-content: space-between;
@@ -32,33 +31,58 @@ body {
     margin: 0 auto;
 }
 
-
-
-.first-logo {
-    border-radius: 100px;
-    align-items: left;
-}
 main {
     padding-top: 70px;
 }
 .logo {
     font-weight: bold;
 }
-.ofertas {
-    display: flex;
-    gap: 15px;
-}
-.ofertas a {
-    text-decoration: none;
+.dropbtn {
+    background: none;
+    color:white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
-    color: aliceblue;
-    position: relative;
+    transition: 0.4s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-.ofertas a:hover {
-    color:goldenrod;
-    text-shadow: 0 0 8px rgba(255, 204, 0, 0.6);
-    transform: translateY(-2px);
-    /* o con box-shadow si usas padding/border */
+.dropbtn:hover {
+    color: lightgreen;
+}
+.dropdown-content {
+    position: absolute;
+    background: linear-gradient(135deg, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+    backdrop-filter: blur(20px);
+    color:aliceblue;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0px;
+    top: 70px;
+    box-sizing: border-box;
+    transition: 0.4s ease;
+    transform-origin: top;
+    transform: scaleY(1);
+}
+.dropdown-content.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: grey;
 }
 .welcome {
     text-align: center;
@@ -103,17 +127,19 @@ figcaption {
     display: block;
     gap: 15px;
 }
-.pagos {
-    padding: 10px;
+#remesas img {
+    margin-left: 6px;
 }
 ul {
-    display: flex;
-    flex-direction: column;
-    padding:10px;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 6;
+    list-style-type: none;
+    padding: 10px;
     text-decoration: none;
-    gap: 20px;
     font-weight: bold;
     font-size: 20px;
+    margin-top: 20px;
 }
 .pasajes {
     display: flex;
@@ -122,7 +148,7 @@ ul {
 
 footer {
     text-align: center;
-    background-color: auto;
+    align-items: center;
     padding-top: 20px;
 }
 .whats {
@@ -134,7 +160,7 @@ footer {
     text-decoration: none;
 }
 .whats a:hover {
-    transform: translateY(2px);
+    transform: translateY(-2px);
     color: green;
 }
 .gracias {
